@@ -1,5 +1,11 @@
-class oopsbannerapp{
-    public static void main(String[] args){
+public class oopsbannerpp {
+
+    // Main method to run the banner display
+    public static void main(String[] args) {
+        // Print each line of the OOPS banner to create the visual effect for the
+        // message "OOPS". Construct each line using string concatenation.
+        // Each line corresponds to a row in the banner for the letters O, O, P, S.
+        
         System.out.println(" ***  " + "  " + " ***  " + " " + "*****  "  + "  " + " ***** ");
         System.out.println("*   * " + "  " + "*   * " + " " + "*    * "  + "  " + "*      ");
         System.out.println("*   * " + "  " + "*   * " + " " + "*    * "  + "  " + "*      ");
@@ -8,4 +14,4 @@ class oopsbannerapp{
         System.out.println("*   * " + "  " + "*   * " + " " + "*      "  + "  " + "     * ");
         System.out.println(" ***  " + "  " + " ***  " + " " + "*      "  + "  " + " ***** ");
     }
-}
+}}
