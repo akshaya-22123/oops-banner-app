@@ -1,26 +1,29 @@
 class oopsbannerapp{
-    
+   
 
     public static void main(String[] args) {
-        // 1. Define a String array with a size equal to the number of lines (7)
-        String[] lines = new String[7];
+        // Define String Array variable to hold the OOPS banner lines.
+        // Each line represents a row in the banner for the letters O, O, P, S.
+        // We use String.join(" ", ...) to add spacing between the letter segments.
+        String[] lines = {
+            String.join(" ", "  ***  ", "  ***  ", " *****  ", " ***** "),
+            String.join(" ", " *   * ", " *   * ", " *   *  ", " *     "),
+            String.join(" ", " *   * ", " *   * ", " *****  ", " ***** "),
+            String.join(" ", " *   * ", " *   * ", " *      ", "     * "),
+            String.join(" ", "  ***  ", "  ***  ", " *      ", " ***** "),
+        };
 
-        // 2. Populate each index of the array using String.join()
-        // We join the patterns for 'O', 'O', 'P', and 'S' with a space separator
-        lines[0] = String.join("  ", " ***  ", " ***  ", "***** ", "  *****  ");
-        lines[1] = String.join("  ", "*   * ", "*   * ", "*   * ", " **      ");
-        lines[2] = String.join("  ", "*   * ", "*   * ", "*   * ", "**       ");
-        lines[3] = String.join("  ", "*   * ", "*   * ", "***** ", " *****   ");
-        lines[4] = String.join("  ", "*   * ", "*   * ", "*     ", "     **  ");
-        lines[5] = String.join("  ", "*   * ", "*   * ", "*     ", "**    ** ");
-        lines[6] = String.join("  ", " ***  ", " ***  ", "*     ", "  *****  ");
-
-        // 3. Use a for-each loop to iterate through the array and print each line
-        System.out.println("--- OOPS Banner ---");
+        // Use a for-each loop to iterate through the array and print each line
+        // to create the visual banner effect in the console.
         for (String line : lines) {
             System.out.println(line);
-    }
+        }
+    
+} 
+}
 
-}
-}
+    
+    
+
+
 
